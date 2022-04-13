@@ -1,20 +1,22 @@
 programa {
 	funcao inicio() {
-	    inteiro cavalos, ferraduras
-	    real total,valorFerradura = 9.90, desconto=10.0
+
+	    inteiro b, h, area
+
+		escreva("digite lado b do retangulo: ")
+		leia(b)
 		
-		escreva("digite a quantidade de cavalos que precisam de 4 ferraduras: ")
-		leia(cavalos)
+		escreva("digita lado h do retangulo: ")
+		leia(h)
 		
-		total = cavalos*4*valorFerradura
-		escreva("valor da ferradura: R$",valorFerradura)
+		area = b*h
 		
-		se(total>100){
-		    total = total * ((100-desconto)/100)
-            escreva("\ntotal com desconto de ",desconto,"%: ","R$",total)
+		escreva("area do retangulo (b*h): ",area)
+		
+		se(b==h){
+		    escreva("\né um quadrado")
 		}senao{
-		   	escreva("\ntotal: R$",total)
+		    escreva("\nnão é um quadrado")
 		}
-		
 	}
 }
